@@ -1,6 +1,13 @@
 var count = 0;
 var randomNumber = Math.floor(Math.random() * 100) + 1;
 
+document.querySelector("#try").onkeypress = function (e) {
+  if (e.keycode == 13 || e.which == 13) {
+    finding();
+    return false;
+  }
+};
+
 function finding() {
   var userNumber = document.querySelector("#try").value;
 
