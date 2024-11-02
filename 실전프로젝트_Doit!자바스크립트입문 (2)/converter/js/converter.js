@@ -19,3 +19,11 @@ function exUnit() {
     tUnit.innerHTML = "&#8457";
   }
 }
+
+function converter() {
+  if (cToF) {
+    target.value = source.value * 1.8 + 32;
+  } else {
+    target.value = (source.value - 32) / 1.8;
+  }
+}
