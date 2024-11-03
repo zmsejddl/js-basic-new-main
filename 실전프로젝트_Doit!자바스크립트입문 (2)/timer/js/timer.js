@@ -25,14 +25,16 @@ function countTimer() {
     } else {
       clearInterval(timer);
       document.querySelector("#display").innerText = "타이머 종료";
-      document.querySelector("#startMin").value = "";
-      document.querySelector("#startSec").value = "";
     }
   }
 }
 
 function resetTimer() {
   clearTimer(timer);
+}
+
+function clearTimer(t) {
+  clearInterval(t);
   document.getElementById("display").innerText = "";
   document.getElementById("startMin").value = "";
   document.getElementById("startSec").value = "";
