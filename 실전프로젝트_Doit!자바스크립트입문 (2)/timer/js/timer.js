@@ -30,3 +30,10 @@ function countTimer() {
     }
   }
 }
+
+function resetTimer() {
+  clearTimer(timer);
+  document.getElementById("display").innerText = "";
+  document.getElementById("startMin").value = "";
+  document.getElementById("startSec").value = "";
+}
